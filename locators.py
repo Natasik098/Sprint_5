@@ -44,15 +44,15 @@ class Locators:
     #Заголовок "Собери бургер" на главной странице
     CONSTRUCTOR_HEADER = (By.XPATH, "//h1[text()='Соберите бургер']")
     #Булки вкладка
-    BUNS_SECTION = (By.XPATH, ".//span[text()='Булки']/parent::*")
+    BUNS_SECTION = (By.XPATH, "//div[contains(@class, 'tab_tab') and .//span[normalize-space()='Булки']]")
     #Заголовок раздела "Булки"
-    BUNS_HEADER = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Булки']")
+    BUNS_HEADER = (By.XPATH, "//h2[normalize-space()='Булки']")
     #Соусы
-    SAUCES_SECTION = (By.XPATH, "//span[text()='Соусы']")
+    SAUCES_SECTION = (By.XPATH, "//div[contains(@class, 'tab_tab') and .//span[normalize-space()='Соусы']]")
     #Заголовок "Соусы"
-    SAUCES_HEADER = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Соусы']")
+    SAUCES_HEADER = (By.XPATH, "//h2[normalize-space()='Соусы']")
     #Начинки
-    FILLINGS_SECTION = (By.XPATH, "//span[text()='Начинки']")
+    FILLINGS_SECTION = (By.XPATH, "//div[contains(@class, 'tab_tab') and .//span[normalize-space()='Начинки']]")
     #Заголовок "Начинки"
-    FILLINGS_HEADER = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Начинки']")
+    FILLINGS_HEADER = (By.XPATH, "//h2[normalize-space()='Начинки']")
     
